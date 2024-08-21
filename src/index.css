@@ -67,3 +67,36 @@
     @apply bg-background text-foreground;
   }
 }
+
+@media print{
+  .my-10, .mx-10, .md\:mx-20, .lg\:mx-36 {
+    margin: 0 !important;
+  }
+  
+  #no-print{
+    display: none;
+  }
+  #print-area{
+    display: block;
+  }
+  body{
+    margin: 0;
+    padding: 0;
+    box-shadow: none;
+  }
+}
+
+@page{
+  size: auto;
+  margin: 0mm;
+}
+
+.rsw-ce ul {
+  list-style: disc;
+  padding-left: 2em;
+}
+
+.rsw-ce ol {
+  list-style: decimal;
+  padding-left: 2em;
+}
