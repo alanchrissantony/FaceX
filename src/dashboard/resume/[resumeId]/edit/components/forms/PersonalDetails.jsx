@@ -24,7 +24,7 @@ function PersonalDetails({enabledNext}) {
         e.preventDefault()
         setLoading(true)
 
-        GlobalApi.UpdateUserResumes({...formData, themeColor:"#ff6666"}).then(response =>{
+        GlobalApi.UpdateUserResumes({...formData, themeColor:"#333"}).then(response =>{
             enabledNext(true)
             setLoading(false)
             toast("Details updated")
